@@ -3,10 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/2287a83a88.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font-family: 'Nunito Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+     <!-- icon Fonfisto Free CDN-->
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css”></i>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!!!</h1>
+    <div class="">
+      <!-- Navbar -->
+      <nav class="border-solid shadow-md rounded-md">
+        <div class="flex justify-between mt-3 mb-3 py-2 px-8">
+          <div class="font-bold">Where in the world?</div>
+          <div class="font-light flex">
+            
+              <span class="pt-1 px-2">
+                  <img src="../assets/icons/moon-outline.svg" alt="moon" width="15">
+              </span>
+            
+            Dark Mode
+          </div>
+        </div>
+      </nav>
+      <!-- Search and Filter buttons -->
+      <div class="container mx-auto">
+        <div class="sm:flex sm:justify-between">
+          <div class="flex m-4 border-solid shadow-md rounded-md">
+            <span class="pt-4 px-4">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"
+                />
+              </svg>
+            </span>
+            <input
+              class="bg-white m-4 pr-4"
+              type="text"
+              placeholder="Search for a country ..."
+            />
+          </div>
+          <div class="m-4 border-solid shadow-md rounded-md">
+            <select class="bg-white m-4 pr-4" name="pets" id="pet-select">
+              <option value="">Filter by Region</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="parrot">Parrot</option>
+              <option value="spider">Spider</option>
+              <option value="goldfish">Goldfish</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- main -->
+      <div id="loading"></div>
+      <div class="" id="root">
+
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
